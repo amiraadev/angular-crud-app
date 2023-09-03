@@ -7,10 +7,10 @@ import { ViewContactComponent } from './components/view-contact/view-contact.com
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'contacts/admin/',  pathMatch: 'full'},
-  {path: 'contacts/admin/',  component: ContactManagerComponent},
-  {path: 'contacts/add/',  component: AddContactComponent},
-  {path: 'contacts/edit/',  component: EditContactComponent},
+  {path: '', redirectTo: 'contacts/admin',  pathMatch: 'full'},
+  {path: 'contacts/admin',  component: ContactManagerComponent},
+  {path: 'contacts/add',  component: AddContactComponent},
+  {path: 'contacts/edit',  component: EditContactComponent},
   {path: 'contacts/view/:contactId',  component: ViewContactComponent},
   {path: '**',  component: PageNotFoundComponent},
 ];
