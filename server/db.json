@@ -1,0 +1,107 @@
+{
+    "contacts": [
+        {
+            "id": "1",
+            "name": "John Doe",
+            "email": "john.doe@email.com",
+            "photo": "./assets/user-1.jpg",
+            "mobile": "+1 123-456-7890",
+            "company": "XYZ Corp",
+            "title": "Senior Developer",
+            "groupId": "Social"
+          },
+          
+          {
+            "id": "2",
+            "name": "Janette Smith",
+            "email": "jane.smith@email.com",
+            "photo": "./assets/user-2.jpg",
+            "mobile": "+1 987-654-3210",
+            "company": "ABC Inc.",
+            "title": "Account Manager",
+            "groupId": "Social"
+          },
+          
+          {
+            "id": "3",
+            "name": "Robert Johnson",
+            "email": "robert.johnson@email.com",
+            "photo": "./assets/user-3.jpg",
+            "mobile": "+1 555-555-5555",
+            "company": "Acme Corp",
+            "title": "Operations Manager",
+            "groupId": "Friend"
+          },
+          
+          {
+            "id": "4",
+            "name": "Emily Davis",
+            "email": "emily.davis@email.com",
+            "photo": "./assets/user-4.jpg",
+            "mobile": "+1 777-777-7777",
+            "company": "Tech Solutions",
+            "title": "Product Manager",
+            "groupId": "Community"
+          },
+          
+          {
+            "id": "5",
+            "name": "Michael Wilson",
+            "email": "michael.wilson@email.com",
+            "photo": "./assets/user-5.jpg",
+            "mobile": "+1 888-888-8888",
+            "company": "Global Enterprises",
+            "title": "Marketing Director",
+            "groupId": "Friend"
+          },
+          
+          {
+            "id": "6",
+            "name": "Sara Adams",
+            "email": "sara.adams@email.com",
+            "photo": "./assets/user-6.png",
+            "mobile": "+1 666-666-6666",
+            "company": "Innovate Labs",
+            "title": "Research Scientist",
+            "groupId": "Colleague"
+          },
+          
+          {
+            "id": "7",
+            "name": "William Brown",
+            "email": "william.brown@email.com",
+            "photo": "./assets/user-7.png",
+            "mobile": "+1 222-222-2222",
+            "company": "Tech Innovations",
+            "title": "Software Engineer",
+            "groupId": "Colleague"
+          }
+    ],
+    "groups": [
+        {
+            "id": "1",
+            "name": "Colleague"
+          },
+          
+          {
+            "id": "2",
+            "name": "Friend"
+          },
+          
+          {
+            "id": "3",
+            "name": "Family"
+          },
+          
+          {
+            "id": "4",
+            "name": "Community"
+          },
+          
+          {
+            "id": "5",
+            "name": "Social"
+          }
+    ]
+
+}
