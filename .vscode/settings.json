@@ -1,0 +1,14 @@
+{
+    "prettier.parser": "flow",
+    "prettier.bracketSameLine": true,
+    "prettier.enableDebugLogs": true,
+    "prettier.insertPragma": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.requireConfig": true,
+    "prettier.resolveGlobalModules": true,
+    "prettier.requirePragma": true,
+    "prettier.useTabs": true,
+    "prettier.vueIndentScriptAndStyle": true,
+    "prettier.withNodeModules": false,
+    "vs-code-prettier-eslint.prettierLast": true
+}
