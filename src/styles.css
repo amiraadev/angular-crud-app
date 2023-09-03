@@ -9,5 +9,13 @@
 
   .contact-image{
     width: 150px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .contact-image-big{
+    
+    width: 200px;
+    height: 250px;
     border-radius: 50%;
   }

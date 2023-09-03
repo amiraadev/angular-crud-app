@@ -1,1 +1,49 @@
-<p>add-contact works!</p>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <p class="h3 fw-bold text-success">Add Contact</p>
+            <p class="fst-italic">Adding a new contact is quick and easy. Simply fill in the required fields with the contact's name, email address, and phone number. You can also provide additional information such as their job title or company for better organization. Once you've entered the details, hit the 'Save' button, and the contact will be securely stored in your database. Feel free to come back and update their information anytime. Managing your contacts has never been more convenient!</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Contact Form -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+           <form>
+            <div class="mb-2">
+                <input class="form-control" placeholder="Name" type="text">
+            </div>
+            <div class="mb-2">
+                <input class="form-control" placeholder="Photo Url" type="text">
+            </div>
+            <div class="mb-2">
+                <input class="form-control" placeholder="Email" type="email">
+            </div>
+            <div class="mb-2">
+                <input class="form-control" placeholder="Mobile" type="number">
+            </div>
+            <div class="mb-2">
+                <input class="form-control" placeholder="Company" type="text">
+            </div>
+            <div class="mb-2">
+                <input class="form-control" placeholder="Title" type="text">
+            </div>
+            <div class="mb-2">
+              <select class="form-control">
+                 <option value="">Select a Group</option>
+              </select>           
+            </div>
+            <div class="mb-2">
+                <input class="btn btn-success" value="Create" type="submit">
+                <a routerLink="/" class="btn btn-dark ms-2">Close</a>
+            </div>
+           </form>
+        </div>
+        <div class="col-sm-4">
+            <img src="../../../assets/images/user-1.jpg" alt="user-1" class="contact-image">
+        </div>
+    </div>
+</div>
