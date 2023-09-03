@@ -29,17 +29,23 @@
 <div class="container mt-3">
     <div class="row">
         <div class="col-md-6">
-            <div class="card list-group-item-success">
+            <div class="card bg-success-subtle">
                 <div class="card-body">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-sm-4">
-                           <img src="" alt="">
+                           <img src="../../../assets/images/user-1.jpg" alt="user-1" class="contact-image">
                         </div>
                         <div class="col-sm-7">
-                           <img src="" alt="">                           
+                            <ul class="list-group">
+                                <li class="list-group-item">Name: <span class="fw-bold">Name</span></li>
+                                <li class="list-group-item">Email: <span class="fw-bold">Email</span></li>
+                                <li class="list-group-item">Mobile: <span class="fw-bold">Mobile</span></li>
+                            </ul>
                         </div>
-                        <div class="col-sm-1">
-                        <img src="" alt="">                           
+                        <div class="col-sm-1 d-flex flex-column justify-content-center align-items-center">
+                            <a routerLink="/contacts/view/:contactId" class="btn btn-success my-1"><i class="fa fa-eye"></i></a>
+                            <a routerLink="/contacts/edit/:contactId" class="btn btn-primary my-1"><i class="fa fa-pen"></i></a>
+                            <button class="btn btn-danger"><i class="fa fa-trash-alt my-1"></i></button>
                         </div>
                     </div>
                 </div>
