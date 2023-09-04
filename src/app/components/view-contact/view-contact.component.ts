@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-view-contact',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class ViewContactComponent {
 
+  public contactId:string | null = null;
+
+  constructor(private activatedRoute : ActivatedRoute){}
+
+  ngOnInit():void {
+    this.activatedRoute.paramMap.subscribe((param:Params) => {
+      this.contactId = param['get']('contactId');
+    })
+  }
 }
