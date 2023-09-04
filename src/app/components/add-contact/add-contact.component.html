@@ -14,26 +14,27 @@
         <div class="col-sm-3">
            <form>
             <div class="mb-2">
-                <input class="form-control" placeholder="Name" type="text">
+                <input [(ngModel)]="contact.name" name="name" class="form-control" placeholder="Name" type="text" required="true">
             </div>
             <div class="mb-2">
-                <input class="form-control" placeholder="Photo Url" type="text">
+                <input [(ngModel)]="contact.photo" name="photo" class="form-control" placeholder="Photo Url" type="text" required="true">
             </div>
             <div class="mb-2">
-                <input class="form-control" placeholder="Email" type="email">
+                <input  [(ngModel)]="contact.email" name="email" class="form-control" placeholder="Email" type="email" required="true">
             </div>
             <div class="mb-2">
-                <input class="form-control" placeholder="Mobile" type="number">
+                <input  [(ngModel)]="contact.mobile" name="mobile" class="form-control" placeholder="Mobile" type="number" required="true">
             </div>
             <div class="mb-2">
-                <input class="form-control" placeholder="Company" type="text">
+                <input  [(ngModel)]="contact.company" name="company"  class="form-control" placeholder="Company" type="text" required="true">
             </div>
             <div class="mb-2">
-                <input class="form-control" placeholder="Title" type="text">
+                <input  [(ngModel)]="contact.title" name="title" class="form-control" placeholder="Title" type="text" required="true">
             </div>
             <div class="mb-2">
-              <select class="form-control">
+              <select  [(ngModel)]="contact.groupId" name="groupId"  class="form-control" *ngIf="groups.length > 0" required="true"> 
                  <option value="">Select a Group</option>
+                 <option [value]="group.id" *ngFor="let group of groups">{{group.name}}</option>
               </select>           
             </div>
             <div class="mb-2">
@@ -47,3 +48,5 @@
         </div>
     </div>
 </div>
+
+<pre>{{contact | json }}</pre>
