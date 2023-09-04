@@ -8,11 +8,26 @@
 </div>
 
 
+<!-- loading spinner  -->
+<div *ngIf="loading">
+    <app-spinner></app-spinner>
+</div>
+<!-- Error message -->
+<div *ngIf="!loading && errorMsg">
+     <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="h4 text-danger fw-bold">{{errorMsg}}</p>
+            </div>
+        </div>
+     </div>
+</div>
+
 <!-- Contact Form -->
 <div class="container">
     <div class="row">
         <div class="col-sm-3">
-           <form>
+           <form (submit)="createSubmit()">
             <div class="mb-2">
                 <input [(ngModel)]="contact.name" name="name" class="form-control" placeholder="Name" type="text" required="true">
             </div>
@@ -49,4 +64,4 @@
     </div>
 </div>
 
-<pre>{{contact | json }}</pre>
+<!-- <pre>{{contact | json }}</pre> -->
