@@ -28,7 +28,7 @@
 <div class="container" *ngIf="!loading && isNotEmpty()">
     <div class="row align-items-center">
         <div class="col-sm-4">
-            <img src="{{contact.photo}}" alt="user-1" class="contact-image-big">
+            <img [src]="contact.photo" alt="user-1" class="contact-image-big">
         </div>
         <div class="col-sm-6">
             <ul class="list-group ">
@@ -37,7 +37,7 @@
                 <li class="list-group-item">Mobile: <span class="fw-bold">{{contact.mobile}}</span></li>
                 <li class="list-group-item">Company: <span class="fw-bold">{{contact.company}}</span></li>
                 <li class="list-group-item">Title: <span class="fw-bold">{{contact.title}}</span></li>
-                <li class="list-group-item">Group Name: <span class="fw-bold">{{contact.groupId}}</span></li>
+                <li class="list-group-item">Group Name: <span class="fw-bold">{{group.name}}</span></li>
             </ul>
         </div>
     </div>

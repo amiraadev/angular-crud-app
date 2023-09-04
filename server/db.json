@@ -8,7 +8,7 @@
             "mobile": "+1 123-456-7890",
             "company": "XYZ Corp",
             "title": "Senior Developer",
-            "groupId": "Social"
+            "groupId": "5"
           },
           
           {
@@ -19,7 +19,7 @@
             "mobile": "+1 987-654-3210",
             "company": "ABC Inc.",
             "title": "Account Manager",
-            "groupId": "Social"
+            "groupId": "2"
           },
           
           {
@@ -30,7 +30,7 @@
             "mobile": "+1 555-555-5555",
             "company": "Acme Corp",
             "title": "Operations Manager",
-            "groupId": "Friend"
+            "groupId": "4"
           },
           
           {
@@ -41,7 +41,7 @@
             "mobile": "+1 777-777-7777",
             "company": "Tech Solutions",
             "title": "Product Manager",
-            "groupId": "Community"
+            "groupId": "3"
           },
           
           {
@@ -52,7 +52,7 @@
             "mobile": "+1 888-888-8888",
             "company": "Global Enterprises",
             "title": "Marketing Director",
-            "groupId": "Friend"
+            "groupId": "1"
           },
           
           {
@@ -63,7 +63,7 @@
             "mobile": "+1 222-222-2222",
             "company": "Tech Innovations",
             "title": "Software Engineer",
-            "groupId": "Colleague"
+            "groupId": "1"
           }
     ],
     "groups": [
