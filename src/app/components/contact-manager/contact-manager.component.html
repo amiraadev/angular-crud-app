@@ -1,4 +1,4 @@
-<div class="container mt-3">
+<div class="container mt-3" >
     <div class="row">
         <div class="col">
             <p class="h3 text-success fw-bold"> NG Contacts
@@ -24,22 +24,22 @@
         </div>
     </div>
 </div>
-
+<!-- <pre>{{contacts | json }}</pre> -->
 <!-- Cards -->
-<div class="container mt-3">
+<div *ngIf="!loading && contacts.length > 0" class="container mt-3">
     <div class="row">
-        <div class="col-md-6">
-            <div class="card bg-success-subtle shadow-lg">
+        <div *ngFor="let contact of contacts" class="col-md-6">
+            <div class="card bg-success-subtle shadow-lg my-2">
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col-sm-4">
-                           <img src="../../../assets/images/user-1.jpg" alt="user-1" class="contact-image">
+                           <img [src]="contact.photo" alt="user-1" class="contact-image">
                         </div>
                         <div class="col-sm-7">
                             <ul class="list-group">
-                                <li class="list-group-item">Name: <span class="fw-bold">Name</span></li>
-                                <li class="list-group-item">Email: <span class="fw-bold">Email</span></li>
-                                <li class="list-group-item">Mobile: <span class="fw-bold">Mobile</span></li>
+                                <li class="list-group-item">Name: <span class="fw-bold">{{contact.name}}</span></li>
+                                <li class="list-group-item">Email: <span class="fw-bold">{{contact.email}}</span></li>
+                                <li class="list-group-item">Mobile: <span class="fw-bold">{{contact.mobile}}</span></li>
                             </ul>
                         </div>
                         <div class="col-sm-1 d-flex flex-column justify-content-center align-items-center">
