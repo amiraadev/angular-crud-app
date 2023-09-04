@@ -1,4 +1,4 @@
-export interface IContact {
+export interface IGroup {
     id  : string;
     name  : string;
 
